@@ -58,4 +58,19 @@ Each block data is separated by single space. We don’t use abusing data.
 * If input file name is not specified, display the usage on the console and exit.
 * If your program encounter any errors, display the proper error message and exit your program.
 
+## Program Rules
+* Program must be complete in one C source code file.
+* It must be written in C language (no C++)
+* It must be complied successfully by CL.EXE (Microsoft) or GCC (Unix).
+* Try not to use GUI IDE or any debugger like gdb.
+* You can use standard C library functions.
+* If possible make your code compatible with both CL.EXE (for Windows) and GCC (for Linux).
+* Remove compiler warnings (except for the security warning such as gets())
+* You must not expect closing opened file and releasing allocated memory by exit() function. You need to explicitly close opened files and released allocated memory. 
+* Try to minimize the use of global variables.  Too many global variables are subject to minus point.
+* Do not put pause (e.g. getchar()) in the program because we run your program multiple times in a batch for performance measurement.
+* We test performance of your code on Windows 10 environment by running multiple test files in a batch.
+* Macro must be location independent. In other words, you need to pass all necessary parameters to macro (or use global variables which is not recommended though).
+* Add adequate amount of comments especially where the code is complicated. 
+
 
